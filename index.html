@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoodh - Delicious Smoothies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#About">About</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+             <li><a href="login.html">Logout</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <section id="About">
+        <div class="container">
+            <h2>About Smoodh</h2>
+            Welcome to Smoodh, where we blend deliciousness and nutrition into every sip. Our smoothies are crafted
+            from the freshest ingredients, delivering a burst of flavor with each sip. Discover a world of taste
+            sensations, from refreshing fruit blends to indulgent creamy creations. Join us on a journey of health and
+            satisfaction with Smoodh.
+        </div>
+    </section>
+
+    <section id="flavors">
+        <div class="container">
+                <img id="img" src="choco.png" alt="">
+                <ul>
+                    <li>NAME      :CHOCOLATE MILK</li>
+                    <li>PRICE     :10rs</li>
+                    <li>NUTRITION :Energy 91.54 kcal,
+                        Protein 3.68g,
+                        Carbohydrate 13.90g,
+                        Total Sugars 13.18g,
+                        Added Sugar 7.45g,
+                        Fiber 0.53g,
+                        Total Fat 0.08g,
+                        Saturated Fat 1.61g, </li>
+                    
+                </ul><br>
+            
+            <img id="img" src="T.png" alt="">
+            <ul>
+                <li>NAME      :TOFFEE CARAMEL</li>
+                
+                <li>PRICE     :10rs</li>
+                <li>NUTRITION :Energy 95.89 kcal,
+                    Protein 3.58g,
+                    Carbohydrate 15.36g,
+                    Total Sugars 14.39g,
+                    Added Sugar 8.45g,
+                    Fiber 0.35g,
+                    Total Fat 2.31g,
+                    Saturated Fat 1.58g, </li>
+            </ul>
+            <img id="img" src="CF.png" alt="">
+            <ul>
+                <li>NAME      :COFFEE FRAPPE</li>
+                <li>PRICE     :10rs</li>
+                <li>NUTRITION :Energy 81.06 kcal,
+                    Protein 3.58g,
+                    Carbohydrate 12.48g,
+                    Total Sugars 11.70g,
+                    Added Sugar 6.36g,
+                    Fiber 0.24g,
+                    Total Fat 2.25g,
+                    Saturated Fat 1.54g,</li>
+            </ul>
+            <img id="img" src="haze.png" alt="">
+            <ul>
+                <li>NAME      :HAZELNUT CHOCOLATE</li>
+                <li>PRICE     :10rs</li>
+                <li>NUTRITION :Energy 81.06 kcal,
+                    Protein 3.58g,
+                    Carbohydrate 12.48g,
+                    Total Sugars 11.70g,
+                    Added Sugar 6.36g,
+                    Fiber 0.24g,
+                    Total Fat 2.25g,
+                    Saturated Fat 1.54g, </li>
+            </ul>
+           
+        </div>
+    </section>
+
+    <section id="reviews">
+        <h2>Customer Reviews</h2>
+
+        <div class="container">
+            <form action="#">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email..">
+          
+              <label for="subject">Reviews</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit" onclick="sendMessage()">
+            </form>
+          </div>
+        
+        <div class="review">
+          <p>"The Tropical Paradise smoothie is my absolute favorite! It's so refreshing and delicious!"</p>
+          <p class="reviewer">- RAMA</p>
+        </div>
+        
+        <div class="review">
+          <p>"Berry Blast smoothie is the perfect pick-me-up in the morning. Love the blend of berries!"</p>
+          <p class="reviewer">- KRISHNA</p>
+        </div>
+        
+        <div class="review">
+          <p>"Green Power smoothie is my go-to after a workout. It's so nutritious and energizing!"</p>
+          <p class="reviewer">- SEETHA</p>
+        </div>
+      
+      </section>
+      
+<!-- contact -->
+
+
+
+    <footer id="contact">
+        <h2>Contact US</h2>
+        <p>Have a question or feedback? Get in touch with us:</p>
+
+        <div class="container">
+            <form action="#">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name..">
+          
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email..">
+          
+              <label for="subject">MESSAGE</label>
+              <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+          
+              <input type="submit" value="Submit" onclick="sendMessage()">
+            </form>
+          </div>
+    </footer>
+
+    <script>
+        function sendMessage() {
+          alert("Message sent! Thank you");
+        }
+      </script>
+
+</body>
+
+</html>
